@@ -24,9 +24,9 @@
   <body>
     <header>
       <!-- navigation bar -->
-      <div class="lg:max-w-[1100px] mx-auto">
+      <div class="container lg:max-w-[1100px] mx-auto">
         <nav>
-          <div class="navbar bg-base-100">
+          <div class="navbar py-7 bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
                 <div
@@ -87,9 +87,71 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="container lg:max-w-[1100px] mx-auto mb-96">
       <!-- Banner Section -->
-
+      <section class="">
+        <div
+          class="text-center bg-[url(images/banner.png)] lg:h-[500px] h-[400px] flex flex-col items-center justify-center gap-5 rounded-[30px]"
+        >
+          <h1 class="lg:text-6xl text-5xl text-white">
+            End-to-End Travel With
+          </h1>
+          <h2 class="text-[rgb(29,209,0)] lg:text-6xl text-5xl">
+            Bus Paribahan
+          </h2>
+          <p class="text-white">
+            Yes, you can run unit tests and view the results directly within the
+            app. The <br />
+            integrated testing features allow for a streamlined .
+          </p>
+          <a
+            href="#"
+            class="btn bg-[rgb(29,209,0)] raleway-700 lg:px-10 lg:btn-lg btn-md hover:bg-[rgb(29,209,0)] lg:text-lg border-0"
+            >Buy Tickets</a
+          >
+        </div>
+        <!-- Banner Cards -->
+        <div class="lg:mt-[-50px] max-w-[900px] mx-auto mt-4">
+          <div class="flex justify-evenly gap-5 flex-col lg:flex-row">
+            <!-- card 1 -->
+            <div
+              class="border-b-[rgb(29,209,0)] border-b-2 rounded-3xl flex p-5 gap-4 bg-white flex-1"
+            >
+              <div>
+                <img src="images/people.png" alt="people" />
+              </div>
+              <div>
+                <h5 class="inter-700 text-4xl">500K+</h5>
+                <p class="inter-400 text-gray-400 text-sm">Registered users</p>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div
+              class="border-b-[rgb(29,209,0)] border-b-2 rounded-3xl flex p-5 gap-4 bg-white flex-1"
+            >
+              <div>
+                <img src="images/ticket-cupon.png" alt="people" />
+              </div>
+              <div>
+                <h5 class="inter-700 text-4xl">1.7 lacks</h5>
+                <p class="inter-400 text-gray-400 text-sm">Tickets sold</p>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div
+              class="border-b-[rgb(29,209,0)] border-b-2 rounded-3xl flex p-5 gap-4 bg-white flex-1"
+            >
+              <div>
+                <img src="images/stoppage.png" alt="people" />
+              </div>
+              <div>
+                <h5 class="inter-700 text-4xl">80K+</h5>
+                <p class="inter-400 text-gray-400 text-sm">Rental Partners</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Best Offers for you  -->
 
       <!-- P.H Paribahan -->
