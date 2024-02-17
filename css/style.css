@@ -28,6 +28,12 @@ paragraph - inter 400 700 500 600
   font-weight: 700;
   font-style: normal;
 }
+.raleway-800 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
 .inter-400 {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
