@@ -67,7 +67,11 @@ p {
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
-.seat {
+.seat:hover {
+  background: #0307121a;
+}
+.seat,
+.seat-staring {
   border-radius: 12px;
   height: 60px;
   display: flex;
@@ -83,6 +87,7 @@ p {
   letter-spacing: 0px;
   min-width: 110px;
   cursor: pointer;
+  transition: 0.2s;
 }
 .seat-text {
   display: flex;
