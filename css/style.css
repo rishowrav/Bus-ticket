@@ -5,22 +5,22 @@ heading - Raleway 800 500 700 600
 paragraph - inter 400 700 500 600
 */
 .raleway-500 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif !important;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 500 !important;
   font-style: normal;
 }
 .raleway-600 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif !important;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 600 !important;
   font-style: normal;
 }
 
 .raleway-700 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif !important;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 700 !important;
   font-style: normal;
 }
 .raleway-800,
@@ -40,23 +40,30 @@ p {
   font-variation-settings: "slnt" 0;
 }
 .inter-500 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 500 !important;
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
 .inter-600 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 600 !important;
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
 .inter-700 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 700 !important;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+.inter-900 {
+  font-family: "Inter", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 900 !important;
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
