@@ -87,9 +87,9 @@
         </nav>
       </div>
     </header>
-    <main class="container lg:max-w-[1100px] mx-auto mb-96">
+    <main class="mb-96">
       <!-- Banner Section -->
-      <section class="mb-20">
+      <section class="mb-20 container lg:max-w-[1100px] mx-auto">
         <div
           class="text-center bg-[url(images/banner.png)] lg:h-[500px] h-[400px] flex flex-col items-center justify-center gap-5 rounded-[30px]"
         >
@@ -153,7 +153,7 @@
         </div>
       </section>
       <!-- Best Offers for you  -->
-      <section class="mb-20">
+      <section class="mb-20 container lg:max-w-[1100px] mx-auto">
         <h2 class="text-4xl text-center mb-12">Best offers for you</h2>
         <div class="flex gap-5 flex-col lg:flex-row">
           <!-- coupon 1 -->
@@ -199,8 +199,94 @@
             </div>
           </div>
         </div>
+        <div class="text-center mt-12">
+          <button
+            class="btn bg-white border-1 text-[rgba(29,209,0,1)] hover:bg-[rgba(29,209,0,0.4)] hover:border-[rgba(29,209,0,0.4)] border-[rgba(29,209,0,0.4)] px-5 raleway-700 text-lg lg:text-xl"
+          >
+            See All Offers
+          </button>
+        </div>
       </section>
       <!-- P.H Paribahan -->
+      <section
+        class="border-t-[rgb(29,209,0)] border-t-2 rounded-t-[8rem] py-20 bg-[rgb(247,248,248)]"
+      >
+        <div class="container lg:max-w-[1100px] mx-auto">
+          <h2 class="text-4xl text-center mb-5">P.H Paribahan</h2>
+          <p class="text-gray-500 text-center">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated <br />
+            testing features allow for a streamlined
+          </p>
+          <!-- greenline paribahan -->
+          <div
+            class="flex justify-between lg:px-6 lg:pt-6 mt-12 bg-white rounded-3xl"
+          >
+            <!-- left -->
+            <div class="flex-auto">
+              <div class="flex justify-between pb-8">
+                <div class="flex gap-5 items-center">
+                  <div><img src="images/bus-logo.png" alt="bus" /></div>
+                  <div>
+                    <h4 class="text-3xl raleway-700">Bus Paribahan</h4>
+                    <p class="text-gray-600">Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="flex btn btn-lg bg-[rgba(29,209,0,0.1)] border-1 text-[rgba(29,209,0,1)] hover:bg-[rgba(29,209,0,0.1)] hover:border-[rgba(29,209,0,0.4)] border-[rgba(29,209,0,0.1)] px-5 text-lg lg:text-xl"
+                  >
+                    <img src="images/seat-green.png" alt="seat" />
+                    <span>40</span> Seats left
+                  </button>
+                </div>
+              </div>
+              <div class="bg-[rgb(247,248,248)] p-7 rounded-2xl">
+                <div class="flex justify-between border-dashed border-b-2 pb-5">
+                  <p class="raleway-600 text-gray-600">Route</p>
+                  <p class="raleway-600">Dhaka - Sylhet</p>
+                </div>
+                <div class="flex justify-between border-dashed border-b-2 py-5">
+                  <p class="raleway-600 text-gray-600">Departure Time</p>
+                  <p class="raleway-600">9:00 PM</p>
+                </div>
+
+                <div class="pt-5 flex gap-5">
+                  <p
+                    class="flex-1 text-center py-4 bg-[rgba(3,7,18,0.05)] rounded-lg inter-500"
+                  >
+                    Boarding Point - Laxmipur
+                  </p>
+                  <p
+                    class="flex-1 text-center py-4 bg-[rgba(3,7,18,0.05)] rounded-lg inter-500"
+                  >
+                    Dropping Point - Bogura
+                  </p>
+                  <p
+                    class="flex-1 text-center py-4 bg-[rgba(3,7,18,0.05)] rounded-lg inter-500"
+                  >
+                    Est. Time - 11 Hour
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- center -->
+            <div class="mt-[-25px] mr-[-50px] pl-[30px] hidden lg:flex">
+              <img src="images/info-devider.png" alt="divider" />
+            </div>
+            <!-- right -->
+            <div class="flex items-center justify-center flex-auto">
+              <div class="flex flex-col items-center gap-5">
+                <img src="images/fare.png" alt="tk" />
+                <div class="text-center">
+                  <h4 class="raleway-700 text-4xl">550 Taka</h4>
+                  <p class="raleway-600 text-2xl text-gray-500">Per Seat</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
