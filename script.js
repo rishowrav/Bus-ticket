@@ -23,10 +23,13 @@ for (let className of classNames) {
     const seatPriceList = document.getElementById("seatPriceList");
     seatPriceList.appendChild(div);
 
+    // add selected set color functionality
+    // bg-[#1DD100] hover:bg-[#1DD100] text-white
+    e.target.classList.add("bg-[#1DD100]", "hover:bg-[#1DD100]", "text-white");
+
     // sum of price and show sum of total price
     const seatPrice = document.querySelector("#seatPriceList");
     sum = sum + parseInt(seatPrice.childNodes[0].childNodes[2].innerText);
-    console.log(sum);
     document.getElementById("totalPrice").innerText = sum;
 
     // increment and Decrement number of seat
@@ -34,5 +37,10 @@ for (let className of classNames) {
     decrementOfSeat--;
     document.getElementById("incrementOfSeat").innerText = incrementOfSeat;
     document.getElementById("decrementOfSeat").innerText = decrementOfSeat;
+
+    // condition of seat plan (get 4 seats for one passenger)
+    if (incrementOfSeat > 4) {
+      alert("max 4 you can get");
+    }
   });
 }
