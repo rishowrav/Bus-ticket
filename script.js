@@ -25,6 +25,16 @@ for (let className of classNames) {
     // double selected seat avoid (condition)
     if (!e.target.classList.contains("selectedBusSeat")) {
       if (incrementOfSeat < 4) {
+        // discount disabled to enable condition
+        if (incrementOfSeat >= 3) {
+          document
+            .getElementById("couponField")
+            .childNodes[1].removeAttribute("disabled");
+          document
+            .getElementById("couponField")
+            .childNodes[3].removeAttribute("disabled");
+        }
+
         // condition of seat plan (get 4 seats for one passenger)
         seatPriceList.appendChild(div);
 
@@ -129,11 +139,3 @@ document
     );
     e.target.parentNode.parentNode.classList.add("hidden");
   });
-
-/*
-step-1: select kora value get kora
-step-2: loop chalaya store theke value get kora
-step-3: condition chaliya check kora value ase ki na
-step-4: jodi thake then add na kora and jodi na thake then add kora
-
-*/

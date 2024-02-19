@@ -209,6 +209,7 @@
       </section>
       <!-- P.H Paribahan -->
       <section
+        id="seatSection"
         class="border-t-[rgb(29,209,0)] border-t-2 rounded-t-[8rem] py-20 bg-[rgb(247,248,248)]"
       >
         <div class="container lg:max-w-[1100px] mx-auto">
@@ -287,10 +288,7 @@
           </div>
 
           <!-- select sectoin -->
-          <div
-            id="seatSection"
-            class="p-8 bg-white rounded-3xl flex flex-col lg:flex-row mt-7"
-          >
+          <div class="p-8 bg-white rounded-3xl flex flex-col lg:flex-row mt-7">
             <!-- Select Your Seat Section -->
             <div
               class="mt-6 lg:border-r-2 border-gray-400 border-dashed w-full lg:w-3/5"
@@ -415,14 +413,16 @@
                   </h4>
                 </div>
                 <!-- coupuon button -->
-                <div class="join w-full my-3">
+                <div id="couponField" class="join w-full my-3">
                   <input
+                    disabled
                     class="input w-full bg-white join-item"
                     placeholder="Have any copupon?"
                   />
                   <button
                     id="discountButton"
-                    class="btn join-item bg-[#1DD100] hover:bg-[#1DD100] text-white"
+                    class="btn join-item bg-[#1DD100] hover:bg-[#1DD100] text-white disabled:bg-gray-300 disabled:text-white"
+                    disabled
                   >
                     Apply
                   </button>
