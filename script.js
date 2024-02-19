@@ -75,10 +75,59 @@ for (let className of classNames) {
       document.getElementById("incrementOfSeat").innerText = incrementOfSeat;
       document.getElementById("decrementOfSeat").innerText = decrementOfSeat;
     } else {
-      //   alert("You can selected max 4 seat");
+      alert("You can selected max 4 seat");
     }
   });
 }
+
+// Next button functionality
+document.getElementById("nextButton").addEventListener("click", function (e) {
+  const nameLength = e.target.parentNode.childNodes[3].value.length;
+  const phoneLength = e.target.parentNode.childNodes[7].value.length;
+  const emailLength = e.target.parentNode.childNodes[11].value.length;
+  const priceOfTotal = parseInt(
+    e.target.parentNode.parentNode.parentNode.childNodes[7].childNodes[9]
+      .childNodes[3].childNodes[1].innerText
+  );
+
+  if (
+    nameLength > 0 &&
+    phoneLength > 0 &&
+    emailLength > 0 &&
+    priceOfTotal > 0
+  ) {
+    e.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[9].classList.remove(
+      "hidden"
+    );
+    e.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[1].classList.add(
+      "hidden"
+    );
+    e.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[3].classList.add(
+      "hidden"
+    );
+    e.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[5].classList.add(
+      "hidden"
+    );
+    e.target.parentNode.childNodes[3].value = "";
+    e.target.parentNode.childNodes[7].value = "";
+    e.target.parentNode.childNodes[11].value = "";
+  }
+});
+// Success button functionality
+document
+  .getElementById("successScreen")
+  .addEventListener("click", function (e) {
+    e.target.parentNode.parentNode.parentNode.childNodes[1].classList.remove(
+      "hidden"
+    );
+    e.target.parentNode.parentNode.parentNode.childNodes[3].classList.remove(
+      "hidden"
+    );
+    e.target.parentNode.parentNode.parentNode.childNodes[5].classList.remove(
+      "hidden"
+    );
+    e.target.parentNode.parentNode.classList.add("hidden");
+  });
 
 /*
 step-1: select kora value get kora

@@ -4,6 +4,9 @@ font class
 heading - Raleway 800 500 700 600
 paragraph - inter 400 700 500 600
 */
+html {
+  scroll-behavior: smooth;
+}
 .raleway-500 {
   font-family: "Raleway", sans-serif !important;
   font-optical-sizing: auto;
