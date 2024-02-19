@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="">
+    <header>
       <!-- navigation bar -->
       <div class="container lg:max-w-[1100px] mx-auto">
         <nav>
@@ -87,21 +87,21 @@
         </nav>
       </div>
     </header>
-    <main class="">
+    <main class="p-3">
       <!-- Banner Section -->
       <section class="mb-20 container lg:max-w-[1100px] mx-auto">
         <div
-          class="text-center bg-[url(images/banner.png)] lg:h-[500px] h-[400px] flex flex-col items-center justify-center gap-5 rounded-[30px]"
+          class="text-center bg-[url(images/banner.png)] lg:h-[500px] h-[400px] flex flex-col items-center justify-center lg:gap-5 gap-3 rounded-[30px] p-3"
         >
-          <h1 class="lg:text-6xl text-5xl text-white">
+          <h1 class="lg:text-6xl md:text-5xl text-3xl text-white">
             End-to-End Travel With
           </h1>
-          <h2 class="text-[rgb(29,209,0)] lg:text-6xl text-5xl">
+          <h2 class="text-[rgb(29,209,0)] lg:text-6xl md:text-5xl text-3xl">
             Bus Paribahan
           </h2>
           <p class="text-white">
             Efficient and convenient bus service. Relax in comfort as we
-            transport you <br />
+            transport you <br class="lg:block md:block hidden" />
             safely to your destination. Book your journey now!
           </p>
           <a
@@ -121,7 +121,7 @@
                 <img src="images/people.png" alt="people" />
               </div>
               <div>
-                <h5 class="inter-700 text-4xl">500K+</h5>
+                <h5 class="inter-700 md:text-4xl text-3xl">500K+</h5>
                 <p class="inter-400 text-gray-400 text-sm">Registered users</p>
               </div>
             </div>
@@ -133,7 +133,7 @@
                 <img src="images/ticket-cupon.png" alt="people" />
               </div>
               <div>
-                <h5 class="inter-700 text-4xl">1.7 lacks</h5>
+                <h5 class="inter-700 md:text-4xl text-3xl">1.7 lacks</h5>
                 <p class="inter-400 text-gray-400 text-sm">Tickets sold</p>
               </div>
             </div>
@@ -145,7 +145,7 @@
                 <img src="images/stoppage.png" alt="people" />
               </div>
               <div>
-                <h5 class="inter-700 text-4xl">80K+</h5>
+                <h5 class="inter-700 md:text-4xl text-3xl">80K+</h5>
                 <p class="inter-400 text-gray-400 text-sm">Rental Partners</p>
               </div>
             </div>
@@ -154,14 +154,18 @@
       </section>
       <!-- Best Offers for you  -->
       <section class="mb-20 container lg:max-w-[1100px] mx-auto">
-        <h2 class="text-4xl text-center mb-12">Best offers for you</h2>
-        <div class="flex gap-5 flex-col lg:flex-row">
+        <h2 class="lg:text-4xl text-3xl text-center mb-12">
+          Best offers for you
+        </h2>
+        <div
+          class="flex gap-5 flex-col lg:flex-row w-full md:w-2/3 lg:w-full mx-auto"
+        >
           <!-- coupon 1 -->
           <div
-            class="flex gap-5 h-[200px] items-center border-transparent justify-evenly lg:justify-between px-10 bg-[rgb(255,191,15)] rounded-3xl flex-1"
+            class="flex lg:gap-5 h-[200px] items-center border-transparent justify-evenly lg:justify-between px-10 bg-[rgb(255,191,15)] rounded-3xl flex-1"
           >
             <div class="">
-              <h6 class="inter-900 text-4xl">15% OFF</h6>
+              <h6 class="inter-900 md:text-4xl text-3xl">15% OFF</h6>
               <p class="inter-600">on your next purchase</p>
               <p class="inter-500 text-gray-500">use by january 2024</p>
             </div>
@@ -173,16 +177,16 @@
               />
             </div>
             <div class="text-center">
-              <h6 class="raleway-700 text-2xl">NEW15</h6>
+              <h6 class="raleway-700 lg:text-2xl text-xl">NEW15</h6>
               <p class="raleway-500 text-gray-500">Coupon Code</p>
             </div>
           </div>
           <!-- coupon 2 -->
           <div
-            class="flex gap-5 h-[200px] items-center border-transparent justify-evenly lg:justify-between px-10 bg-[rgb(247,140,156)] rounded-3xl flex-1"
+            class="flex lg:gap-5 h-[200px] items-center border-transparent justify-evenly lg:justify-between px-10 bg-[rgb(247,140,156)] rounded-3xl flex-1"
           >
             <div class="">
-              <h6 class="inter-900 text-4xl">20% OFF</h6>
+              <h6 class="inter-900 md:text-4xl text-3xl">20% OFF</h6>
               <p class="inter-600">on your next purchase</p>
               <p class="inter-500 text-gray-500">use by january 2024</p>
             </div>
@@ -194,7 +198,7 @@
               />
             </div>
             <div class="text-center">
-              <h6 class="raleway-700 text-2xl">Couple20</h6>
+              <h6 class="raleway-700 lg:text-2xl text-xl">Couple20</h6>
               <p class="raleway-500 text-gray-500">Coupon Code</p>
             </div>
           </div>
@@ -213,58 +217,68 @@
         class="border-t-[rgb(29,209,0)] border-t-2 rounded-t-[8rem] py-20 bg-[rgb(247,248,248)]"
       >
         <div class="container lg:max-w-[1100px] mx-auto">
-          <h2 class="text-4xl text-center mb-5">Bus Paribahan</h2>
+          <h2 class="lg:text-4xl text-3xl text-center mb-5">Bus Paribahan</h2>
           <p class="text-gray-500 text-center">
             Secure your seat with ease. Book your ticket online for hassle-free
-            travel. <br />
+            travel. <br class="hidden lg:block" />
             Choose your destination and reserve your spot today!
           </p>
           <!-- Bus paribahan -->
           <div
-            class="flex justify-between lg:px-6 lg:pt-6 mt-12 bg-white rounded-3xl"
+            class="flex justify-between p-6 lg:px-6 lg:pb-0 lg:pt-6 mt-12 bg-white rounded-3xl"
           >
             <!-- left -->
-            <div class="flex-auto">
+            <div class="lg:flex-auto">
               <div class="flex justify-between pb-8">
-                <div class="flex gap-5 items-center">
-                  <div><img src="images/bus-logo.png" alt="bus" /></div>
+                <div class="flex lg:gap-1 gap-2 items-center">
+                  <div class="w-[50px] lg:w-[100px]">
+                    <img src="images/bus-logo.png" alt="bus" />
+                  </div>
                   <div>
-                    <h4 class="text-3xl raleway-700">Bus Paribahan</h4>
-                    <p class="text-gray-600">Coach-009-WEB ! AC_Business</p>
+                    <h4 class="lg:text-3xl text-xl raleway-700">
+                      Bus Paribahan
+                    </h4>
+                    <p class="text-gray-600 text-sm lg:text-md">
+                      Coach-009-WEB ! AC_Business
+                    </p>
                   </div>
                 </div>
                 <div>
                   <button
-                    class="flex btn btn-lg bg-[rgba(29,209,0,0.1)] border-1 text-[rgba(29,209,0,1)] hover:bg-[rgba(29,209,0,0.1)] hover:border-[rgba(29,209,0,0.4)] border-[rgba(29,209,0,0.1)] px-5 text-lg lg:text-xl"
+                    class="flex btn btn-md lg:btn-lg bg-[rgba(29,209,0,0.1)] border-1 text-[rgba(29,209,0,1)] hover:bg-[rgba(29,209,0,0.1)] hover:border-[rgba(29,209,0,0.4)] border-[rgba(29,209,0,0.1)] px-5 text-md lg:text-xl"
                   >
                     <img src="images/seat-green.png" alt="seat" />
                     <span id="decrementOfSeat">40</span> Seats left
                   </button>
                 </div>
               </div>
-              <div class="bg-[rgb(247,248,248)] p-7 rounded-2xl">
-                <div class="flex justify-between border-dashed border-b-2 pb-5">
+              <div class="bg-[rgb(247,248,248)] lg:p-7 p-4 rounded-2xl">
+                <div
+                  class="flex justify-between border-dashed border-b-2 lg:pb-5 py-3 text-sm"
+                >
                   <p class="raleway-600 text-gray-600">Route</p>
                   <p class="raleway-600">Dhaka - Sylhet</p>
                 </div>
-                <div class="flex justify-between border-dashed border-b-2 py-5">
+                <div
+                  class="flex justify-between border-dashed border-b-2 lg:py-5 py-3 text-sm"
+                >
                   <p class="raleway-600 text-gray-600">Departure Time</p>
                   <p class="raleway-600">9:00 PM</p>
                 </div>
 
-                <div class="pt-5 flex gap-5">
+                <div class="pt-5 text-sm flex gap-5">
                   <p
-                    class="flex-1 text-center py-4 bg-[rgba(3,7,18,0.05)] rounded-lg inter-500"
+                    class="flex-1 text-center lg:py-4 py-1 bg-[rgba(3,7,18,0.05)] rounded-lg inter-500"
                   >
                     Boarding Point - Laxmipur
                   </p>
                   <p
-                    class="flex-1 text-center py-4 bg-[rgba(3,7,18,0.05)] rounded-lg inter-500"
+                    class="flex-1 text-center lg:py-4 py-1 bg-[rgba(3,7,18,0.05)] rounded-lg inter-500"
                   >
                     Dropping Point - Bogura
                   </p>
                   <p
-                    class="flex-1 text-center py-4 bg-[rgba(3,7,18,0.05)] rounded-lg inter-500"
+                    class="flex-1 text-center lg:py-4 py-1 bg-[rgba(3,7,18,0.05)] rounded-lg inter-500"
                   >
                     Est. Time - 11 Hour
                   </p>
@@ -276,12 +290,14 @@
               <img src="images/info-devider.png" alt="divider" />
             </div>
             <!-- right -->
-            <div class="flex items-center justify-center flex-auto">
+            <div class="flex items-center justify-center lg:flex-auto">
               <div class="flex flex-col items-center gap-5">
                 <img src="images/fare.png" alt="tk" />
                 <div class="text-center">
-                  <h4 class="raleway-700 text-4xl">550 Taka</h4>
-                  <p class="raleway-600 text-2xl text-gray-500">Per Seat</p>
+                  <h4 class="raleway-700 lg:text-4xl text-2xl">550 Taka</h4>
+                  <p class="raleway-600 lg:text-2xl text-xl text-gray-500">
+                    Per Seat
+                  </p>
                 </div>
               </div>
             </div>
