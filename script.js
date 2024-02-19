@@ -2,6 +2,7 @@ const classNames = document.getElementsByClassName("seat");
 let sum = 0;
 let incrementOfSeat = 0;
 let decrementOfSeat = 40;
+
 for (let className of classNames) {
   className.addEventListener("click", function (e) {
     // Set price list (price menu)
@@ -25,7 +26,10 @@ for (let className of classNames) {
     // double selected seat avoid (condition)
     if (!e.target.classList.contains("selectedBusSeat")) {
       if (incrementOfSeat < 4) {
-        // discount disabled to enable condition
+        // disabled Next button functionality
+        document.getElementById("nextButton").removeAttribute("disabled");
+
+        // disabled discount to enable condition
         if (incrementOfSeat >= 3) {
           document
             .getElementById("couponField")
@@ -90,6 +94,13 @@ for (let className of classNames) {
     }
   });
 }
+
+// disabled Next button functionality
+document.getElementById("pNumber").addEventListener("keyup", function (e) {
+  if (e.target.value.length > 0) {
+    document.getElementById("nextButton").removeAttribute("disabled");
+  }
+});
 
 // Next button functionality
 document.getElementById("nextButton").addEventListener("click", function (e) {
